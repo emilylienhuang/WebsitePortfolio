@@ -1,19 +1,20 @@
 /* Main container */
 /* Intro Section */
 .intro-section {
-    height: 100vh; /* Full screen height */
+    height: 100%; /* Full screen height */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: var(--baby-blue);
     text-align: center;
-    padding: 20px;
+    padding: 10%;
   }
   
   /* Image animation */
   .intro-image {
-    width: 1200px;
+    
+    width: 50%;
     border: 10px solid var(--navy-blue); /* Thick navy blue border */
     animation: fly-in 2s ease-out; /* Image slides in from the right */
     border-radius: 20%;
@@ -34,7 +35,7 @@
     font-size: 3rem;
     font-family: "Source Code Pro", monospace;
     color: var(--navy-blue);
-    margin-top: 20px;
+    margin-top: 3%;
     opacity: 0;
     animation: fade-in 1s ease-out 2s forwards; /* Delayed fade-in */
   }
@@ -43,7 +44,7 @@
     font-size: 1.5rem; /* Smaller font size than the main name */
     font-family: "Source Code Pro", monospace;
     color: var(--navy-blue);
-    margin-top: 10px; /* Space between "Emily Ng" and subtext */
+    margin-top: 0%; /* Space between "Emily Ng" and subtext */
     opacity: 0; /* Hidden initially */
     animation: fade-in 1s ease-out 3s forwards; /* Delayed fade-in animation */
   }
@@ -62,7 +63,7 @@
     position: fixed;
     top: 0;
     left: -300px; /* Hidden off-screen initially */
-    width: 250px;
+    width: 15%;
     height: 100vh;
     background-color: var(--navy-blue);
     color: var(--baby-blue);
@@ -96,7 +97,7 @@
   
   /* About Me Box */
   .about-box {
-    max-width: 1200px; /* Limit the width of the text box */
+    max-width: 50%; /* Limit the width of the text box */
     background-color: white; /* White background */
     border: 2px solid var(--navy-blue); /* Navy blue border */
     border-radius: 10px; /* Slightly rounded corners */
@@ -104,7 +105,7 @@
     color: var(--navy-blue); /* Navy blue text */
     font-family: "Source Code Pro", monospace; /* Matching font */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    margin-top: 20px; /* Space between the subtext and the box */
+    margin-top: 0%; /* Space between the subtext and the box */
     text-align: center; /* Center align the text */
     opacity: 0; /* Initially hidden */
     transform: scale(0.8); /* Smaller size */
