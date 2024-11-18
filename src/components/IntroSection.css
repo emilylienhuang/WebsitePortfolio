@@ -1,7 +1,9 @@
 /* Main container */
 /* Intro Section */
 .intro-section {
-    height: 100%; /* Full screen height */
+    height: 100%; /* Full height for the container */
+    max-height: 80vh; /* Set a limit for scrollable height */
+    overflow-y: auto; /* Enable vertical scrolling */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,11 +16,12 @@
   /* Image animation */
   .intro-image {
     
-    width: 50%;
+    width: 30%;
     border: 10px solid var(--navy-blue); /* Thick navy blue border */
     animation: fly-in 2s ease-out; /* Image slides in from the right */
     border-radius: 20%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    margin-top: 5%;
   }
   
   @keyframes fly-in {
@@ -32,7 +35,7 @@
   
   /* Text animation */
   .intro-text {
-    font-size: 3rem;
+    font-size: 2rem;
     font-family: "Source Code Pro", monospace;
     color: var(--navy-blue);
     margin-top: 3%;
@@ -41,7 +44,7 @@
   }
   
   .intro-subtext {
-    font-size: 1.5rem; /* Smaller font size than the main name */
+    font-size: 1rem; /* Smaller font size than the main name */
     font-family: "Source Code Pro", monospace;
     color: var(--navy-blue);
     margin-top: 0%; /* Space between "Emily Ng" and subtext */
