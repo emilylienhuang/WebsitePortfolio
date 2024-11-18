@@ -1,0 +1,39 @@
+.side-navbar {
+    position: fixed;
+    top: 0;
+    left: -300px; /* Hidden off-screen initially */
+    width: 15%;
+    height: 100vh;
+    background-color: var(--navy-blue); /* Navy blue background */
+    color: var(--baby-blue); /* Text color */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    transition: left 0.5s ease; /* Smooth slide-in animation */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .side-navbar.show {
+    left: 0; /* Slides into view */
+  }
+  
+  .side-navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .side-navbar li {
+    color: inherit; /* Ensure text color is inherited */
+    padding: 15px 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .side-navbar li:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Hover effect */
+    color: white; /* Ensure high contrast on hover */
+  }
+  

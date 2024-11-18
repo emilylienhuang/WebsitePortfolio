@@ -1,16 +1,23 @@
 import React, { useState, useEffect } from "react";
 import "./IntroSection.css";
 import profileImage from "../assets/profilePhoto2024.jpg";
+import Navbar from "./Navbar";
 
 const IntroSection: React.FC = () => {
   const [showAboutMe, setShowAboutMe] = useState(false);
   const [showNavbar, setShowNavbar] = useState(false);
 
   useEffect(() => {
-    // Show navbar after 2 seconds
-    const navbarTimer = setTimeout(() => setShowNavbar(true), 2000);
-    // Show About Me box after bullet points fade in (e.g., 3.5 seconds)
-    const aboutMeTimer = setTimeout(() => setShowAboutMe(true), 4500);
+    const navbarTimer = setTimeout(() => {
+      console.log("Showing Navbar");
+      setShowNavbar(true);
+    }, 2000);
+
+    const aboutMeTimer = setTimeout(() => {
+      console.log("Showing About Me");
+      setShowAboutMe(true);
+    }, 4500);
+
     return () => {
       clearTimeout(navbarTimer);
       clearTimeout(aboutMeTimer);
@@ -27,13 +34,11 @@ const IntroSection: React.FC = () => {
       </p>
 
       {/* Side Navbar */}
-      <div className={`side-navbar ${showNavbar ? "show" : ""}`}>
-        <ul>
-          <li>About</li>
-          <li>Portfolio</li>
-          <li>Contact</li>
-        </ul>
-      </div>
+      {showNavbar && (
+        <div className="side-navbar show">
+          <Navbar />
+        </div>
+      )}
 
       {/* About Me Box */}
       <div className={`about-box ${showAboutMe ? "show" : ""}`}>
