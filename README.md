@@ -1,3 +1,8 @@
+## Kanban (Agile Development) Board Link
+https://public.3.basecamp.com/p/fwLAxKobCjVhw5mB9tMjUJCb 
+
+This project is creating a website portfolio using TypeScript, React, and PostGres.
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -48,3 +53,6 @@ export default tseslint.config({
   },
 })
 ```
+
+
+
