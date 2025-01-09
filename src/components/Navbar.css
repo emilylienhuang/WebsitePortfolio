@@ -24,7 +24,7 @@
     margin: 0;
   }
   
-  .side-navbar li {
+  .side-navbar ul li {
     color: inherit; /* Ensure text color is inherited */
     padding: 15px 20px;
     font-size: 1.5rem;
@@ -32,6 +32,16 @@
     transition: background-color 0.3s ease, color 0.3s ease;
   }
   
+  .nav-link {
+    text-decoration: none !important; /* Removes the underline */
+    color: inherit; /* Inherits the text color from its parent */
+  }
+
+  .nav-link:hover {
+    text-decoration: none !important; /* Ensures no underline appears on hover */
+    color: white; /* Or another color for hover effect, if needed */
+  }
+
   .side-navbar li:hover {
     background-color: rgba(255, 255, 255, 0.2); /* Hover effect */
     color: white; /* Ensure high contrast on hover */

@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import "./IntroSection.css";
-import profileImage from "../assets/profilePhoto2024.jpg";
-import Navbar from "./Navbar";
+import "./Home.css";
+import profileImage from "../assets/profilePhoto2024.JPG";
+import Navbar from "../components/Navbar";
 
-const IntroSection: React.FC = () => {
+const Home: React.FC = () => {
   const [showAboutMe, setShowAboutMe] = useState(false);
   const [showNavbar, setShowNavbar] = useState(false);
 
@@ -30,7 +30,8 @@ const IntroSection: React.FC = () => {
       <img src={profileImage} alt="Emily Ng" className="intro-image" />
       <h1 className="intro-text">Emily Ng</h1>
       <p className="intro-subtext">
-        MS in CS • El Pomar Scholar • CodePath Student • Dynamic Learner
+        MS in CS • Software Engineer • Research Assistant • El Pomar Scholar •
+        CodePath Student • Dynamic Learner
       </p>
 
       {/* Side Navbar */}
@@ -56,4 +57,4 @@ const IntroSection: React.FC = () => {
   );
 };
 
-export default IntroSection;
+export default Home;
